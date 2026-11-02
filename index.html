@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOIR — Barber Club</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#10100f;--gold:#c9a66b;--white:#f5f0e8;--muted:#aaa49a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif}
+a{color:inherit;text-decoration:none}
+header{height:82px;padding:0 8%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff18}
+.logo{font-family:'Playfair Display';font-size:27px;letter-spacing:5px}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:32px;font-size:13px;color:#d4d0c8}
+nav a:hover{color:var(--gold)}
+.hero{min-height:650px;padding:100px 8%;display:flex;align-items:center;background:linear-gradient(90deg,#10100f 5%,#10100fdd 48%,#10100f22),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:650px}
+.eyebrow{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:11px;margin-bottom:25px}
+h1{font:600 clamp(48px,7vw,88px)/1.05 'Playfair Display';margin-bottom:25px}
+h1 span{color:var(--gold)}
+.hero p{color:#d0cbc2;line-height:1.8;max-width:470px;margin-bottom:35px}
+.btn{display:inline-block;background:var(--gold);color:#17130e;padding:15px 27px;font-size:12px;font-weight:700;letter-spacing:1px;transition:.25s}
+.btn:hover{background:#e2c18c;transform:translateY(-3px)}
+section{padding:100px 8%}
+.section-top{text-align:center;margin-bottom:55px}
+.section-top h2{font:600 clamp(34px,4vw,49px) 'Playfair Display';margin-bottom:14px}
+.section-top p{color:var(--muted);font-size:14px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service{border:1px solid #ffffff20;padding:35px 28px;transition:.3s}
+.service:hover{border-color:var(--gold);transform:translateY(-5px)}
+.number{color:var(--gold);font-size:12px;letter-spacing:2px}
+.service h3{font:500 25px 'Playfair Display';margin:22px 0 12px}
+.service p{color:var(--muted);font-size:13px;line-height:1.8;min-height:70px}
+.price{color:var(--gold);font-size:19px;margin-top:20px}
+.about{background:#191917;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about img{width:100%;height:420px;object-fit:cover}
+.about h2{font:600 44px 'Playfair Display';margin-bottom:20px}
+.about p{color:var(--muted);line-height:1.9;margin-bottom:18px}
+.booking{text-align:center;background:linear-gradient(#10100fee,#10100fee),url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1600&q=85') center/cover}
+.booking h2{font:600 45px 'Playfair Display';margin-bottom:15px}
+.booking p{color:var(--muted);margin-bottom:30px}
+footer{padding:30px 8%;display:flex;justify-content:space-between;gap:15px;color:#888;font-size:12px;border-top:1px solid #ffffff18}
+@media(max-width:750px){header{padding:0 5%;height:auto;min-height:75px;flex-wrap:wrap;gap:15px;padding-top:15px;padding-bottom:15px}nav{gap:15px;flex-wrap:wrap;font-size:12px}.hero{padding:85px 7%;min-height:570px}.services{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:30px}.about img{height:280px}section{padding:75px 7%}footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#">NOIR<span>.</span></a>
+  <nav>
+    <a href="#uslugi">Usługi</a>
+    <a href="#o-nas">O nas</a>
+    <a href="#rezerwacja">Rezerwacja</a>
+  </nav>
+</header>
+<main>
+  <div class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Barber Club · Od 2018 roku</div>
+      <h1>Styl zaczyna się<br>od <span>detali.</span></h1>
+      <p>Klasyczne rzemiosło, nowoczesne podejście i dbałość o każdy szczegół. Odkryj miejsce stworzone dla mężczyzn, którzy cenią dobry styl.</p>
+      <a class="btn" href="#rezerwacja">UMÓW WIZYTĘ</a>
+    </div>
+  </div>
+
+  <section id="uslugi">
+    <div class="section-top">
+      <div class="eyebrow">Nasza oferta</div>
+      <h2>Usługi i cennik</h2>
+      <p>Wybierz usługę i pozwól nam zadbać o Twój wygląd.</p>
+    </div>
+    <div class="services">
+      <article class="service"><div class="number">01 / WŁOSY</div><h3>Strzyżenie męskie</h3><p>Indywidualne dopasowanie fryzury, precyzyjne cięcie i stylizacja.</p><div class="price">80 zł</div></article>
+      <article class="service"><div class="number">02 / BRODA</div><h3>Pielęgnacja brody</h3><p>Modelowanie, kontur i pielęgnacja dopasowana do Twojego stylu.</p><div class="price">55 zł</div></article>
+      <article class="service"><div class="number">03 / PREMIUM</div><h3>Pakiet NOIR</h3><p>Kompleksowa metamorfoza: strzyżenie, broda i wykończenie.</p><div class="price">120 zł</div></article>
+    </div>
+  </section>
+
+  <section class="about" id="o-nas">
+    <img src="https://images.unsplash.com/photo- barber?auto=format&fit=crop&w=1000&q=85" alt="Wnętrze salonu barberskiego">
+    <div>
+      <div class="eyebrow">Poznaj NOIR</div>
+      <h2>Więcej niż zwykły barber.</h2>
+      <p>NOIR to przestrzeń, w której tradycyjne barberskie rzemiosło spotyka się z nowoczesnym stylem.</p>
+      <p>Dbamy o atmosferę, jakość usług i detale, dzięki którym każda wizyta staje się przyjemnym doświadczeniem.</p>
+      <a class="btn" href="#rezerwacja">ODWIEDŹ NAS</a>
+    </div>
+  </section>
+
+  <section class="booking" id="rezerwacja">
+    <div class="eyebrow">Twój czas na zmianę</div>
+    <h2>Gotowy na nowy styl?</h2>
+    <p>Zadzwoń i umów termin swojej wizyty.</p>
+    <a class="btn" href="tel:+48123456789">+48 123 456 789</a>
+  </section>
+</main>
+<footer><span>NOIR. BARBER CLUB</span><span>Projekt demonstracyjny · 2026</span></footer>
+</body>
+</html>
